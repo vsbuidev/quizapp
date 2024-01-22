@@ -1,3 +1,9 @@
+const toggleModeButton = document.getElementById("toggle-mode-button");
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
 const quizData = [
   {
     question: "What is the capital of France?",
@@ -64,8 +70,8 @@ const quizData = [
 let currentQuestion = 0;
 let score = 0;
 
-const questionContainer = document.getElementById("ques-cont");
-const optionsContainer = document.getElementById("opt-cont");
+const questionContainer = document.getElementById("question-container");
+const optionsContainer = document.getElementById("options-container");
 const resultContainer = document.getElementById("result");
 const nextButton = document.getElementById("next-button");
 
